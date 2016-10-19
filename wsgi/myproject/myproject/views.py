@@ -6,4 +6,4 @@ def hello(request):
     return HttpResponse("Hello world ! It is my/my/views.py")
 
 def intro(request):
-    
+    return HttpResponse("Under developement")
