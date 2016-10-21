@@ -13,6 +13,7 @@ footer{
 }
 .footer-wrapper{
   text-align: center;
-  background-color: rgba(0,0,0.4);
+  background-color: rgba(0,0,0,0.4);
   padding: 10px 20px;
+  font-family: sans-serif;
 }
