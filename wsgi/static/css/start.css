@@ -45,3 +45,6 @@ main{
   font-size: 30px;
   margin: 10px 0;
 }
+.selected{
+  color: #e83f7c;
+}
