@@ -24,4 +24,4 @@ def start(request):
     return HttpResponse(html)
 '''
 def start(request):
-    return rendor_to_response('start.html',{'title':'Web mini game centre'})
+    return render_to_response('start.html',{'title':'Web mini game centre'})
