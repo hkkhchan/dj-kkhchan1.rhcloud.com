@@ -6,12 +6,9 @@
 .message{
   display: inline-block;
   text-align: center;
-  color: #fff;
+}
+main{
   font-family: 'Freckle Face', cursive;
   font-weight: bold;
-  text-shadow:
-    0 -1px 5px #fff,
-    0 -5px 10px #ff0,
-    0 -10px 25px #f80,
-    0 -20px 50px #f00,
+  color: #6e64f9;
 }
