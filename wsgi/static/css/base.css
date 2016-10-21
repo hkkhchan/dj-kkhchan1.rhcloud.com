@@ -1,7 +1,7 @@
-body{
+.body{
   background: #F9D854; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(#F9D854 16%, #FEFEDA 45%); /* For Safari */
   background: -o-linear-gradient(#F9D854 16%, #FEFEDA 45%); /* For Opera */
   background: -moz-linear-gradient(#F9D854 16%, #FEFEDA 45%); /* For Firefox */
-  background: linear-gradient(#F9D854 16%, #FEFEDA 45%); /* Standard */
+  background: linear-gradient(#F9D854 16%, #FEFEDA 45%); /* Standard */ 
 }

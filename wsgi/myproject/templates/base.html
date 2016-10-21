@@ -2,13 +2,13 @@
 <html>
   <head>
     <title>{{ title }}</title>
-    <link href='//fonts.googleapis.com/css?family=Freckle+Face' rel='stylesheet' type='text/css'>
-    <link href='/static/css/base.css' rel='stylesheet' type='text/css'>
-    <link href='/static/css/start.css' rel='stylesheet' type='text/css'>
+    <link href="//fonts.googleapis.com/css?family=Freckle+Face" rel="stylesheet" type="text/css">
+    <link href="/static/css/base.css" rel="stylesheet" type="text/css">
+    <link href="/static/css/start.css" rel="stylesheet" type="text/css">
     <script src="/static/js/start.js"></script>
   </head>
   <body>
     <main>{% block content %}{% endblock %}</main>
-    <footer>{% include 'footer.html' %}</footer>
+    <footer>{% include "footer.html" %}</footer>
   </body>
 </html>
