@@ -1,6 +1,7 @@
 from django.template.loader import get_template
 from django.template import Template, Context
 from django.http import HttpResponse
+from django.shortcuts import render_to_response
 import pdb
 import datetime
 
@@ -16,7 +17,11 @@ def welcome(request):
     html = t.render(Context({'current_date':now}))
     return HttpResponse(html)
 
+'''
 def start(request):
     t = get_template('start.html')
     html = t.render(Context({'title':'Web mini game centre'}))
     return HttpResponse(html)
+'''
+def start(request):
+    return rendor_to_response('start.html',{'title':'Web mini game centre'})
