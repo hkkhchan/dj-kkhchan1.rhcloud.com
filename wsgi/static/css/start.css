@@ -18,13 +18,13 @@ main{
   animation-timing-function: ease-in-out;
 }
 @-webkit-keyframes blink {
-  from {display: inline-block;}
-  to {display: none;}
+  from {opacity: 1;}
+  to {opacity: 0 ;}
 }
 
 @keyframes blink {
-  from {display: inline-block;}
-  to {display: none;}
+  from {opacity: 1;}
+  to {opacity: 0;}
 }
 .topic-wrapper, .start-wrapper, .option-wrapper{
   display: inline-block;

@@ -1,11 +1,22 @@
+{% load static %}
 <!doctype html>
 <html>
   <head>
     <title>{{ title }}</title>
     <link href="//fonts.googleapis.com/css?family=Freckle+Face" rel="stylesheet" type="text/css">
     <link href="/static/css/base.css" rel="stylesheet" type="text/css">
-    <link href="/static/css/start.css" rel="stylesheet" type="text/css">
-    <script src="/static/js/start.js"></script>
+    {% for css in ext_css%}
+      <link href="//{{ css }}.css" rel="stylesheet" type="text/css">
+    {% endfor %}    
+    {% for css in static_css%}
+      <link href="/static/css/{{ css }}.css" rel="stylesheet" type="text/css">
+    {% endfor %}
+    {% for js in ext_js%}
+      <script src="//{{ js }}.js"></script>
+    {% endfor %}    
+    {% for js in static_js%}
+      <script src="/static/js/{{ js }}.js"></script>
+    {% endfor %}
   </head>
   <body>
     <main>{% block content %}{% endblock %}</main>
