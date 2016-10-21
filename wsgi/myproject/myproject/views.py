@@ -19,6 +19,6 @@ def welcome(request):
 
 def start(request):
     title = 'Web mini game centre'
-    js= ('start.js')
-    css = ('start.css')
+    js= ['js/start.js']
+    css = ['css/start.css']
     return render_to_response('start.html',locals())
