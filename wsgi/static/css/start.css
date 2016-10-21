@@ -1,4 +1,12 @@
-.start-wrapper{
+.topic{
+  font-size:56px;
+  text-align:center;
+  display:inline-block;
+}
+.topic-wrapper{
+  height: 45vh;
+}
+.topic-wrapper, .start-wrapper{
   display: inline-block;
   width:100%;
   padding: 0 50px;
