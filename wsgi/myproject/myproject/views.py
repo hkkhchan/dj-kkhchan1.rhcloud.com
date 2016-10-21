@@ -17,11 +17,8 @@ def welcome(request):
     html = t.render(Context({'current_date':now}))
     return HttpResponse(html)
 
-'''
 def start(request):
-    t = get_template('start.html')
-    html = t.render(Context({'title':'Web mini game centre'}))
-    return HttpResponse(html)
-'''
-def start(request):
-    return render_to_response('start.html',{'title':'Web mini game centre'})
+    title = 'Web mini game centre'
+    js= ('start.js')
+    css = ('start.css')
+    return render_to_response('start.html',locals())
