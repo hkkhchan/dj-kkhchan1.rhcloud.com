@@ -19,5 +19,6 @@ from myproject import views
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^hello/', views.hello, name='hello'),
+    url(r'^start$', views.start, name='start'),
     url(r'^$', views.welcome, name='welcome')
 ]

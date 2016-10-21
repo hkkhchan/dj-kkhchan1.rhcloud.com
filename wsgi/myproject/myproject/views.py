@@ -15,3 +15,8 @@ def welcome(request):
     t = get_template('welcome.html')
     html = t.render(Context({'current_date':now}))
     return HttpResponse(html)
+
+def start(request):
+    t = get_template('start.html')
+    html = t.render(Context({'title':'Web mini game centre'}))
+    return HttpResponse(html)
