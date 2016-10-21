@@ -1,19 +1,22 @@
 .topic{
-  font-size:56px;
-  text-align:center;
-  display:inline-block;
+  font-size:70px;
+}
+.message{
+  font-size:40px;
 }
 .topic-wrapper{
-  height: 45vh;
+  padding: 30vh 1%;
+}
+.start-wrapper{
+  padding: 15vh 1%;
 }
 .topic-wrapper, .start-wrapper{
   display: inline-block;
-  width:100%;
-  padding: 0 50px;
+  width:98%;
+  text-align:center;
 }
-.message{
+.message, .topic{
   display: inline-block;
-  text-align: center;
 }
 main{
   font-family: 'Freckle Face', cursive;
