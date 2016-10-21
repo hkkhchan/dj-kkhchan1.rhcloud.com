@@ -4,6 +4,8 @@ body{
   background: -o-linear-gradient(#F9D854 16%, #FEFEDA 45%); /* For Opera */
   background: -moz-linear-gradient(#F9D854 16%, #FEFEDA 45%); /* For Firefox */
   background: linear-gradient(#F9D854 16%, #FEFEDA 45%); /* Standard */ 
+  background-attachment: fixed;
+  margin: 0;
 }
 footer{
   position: absolute;
