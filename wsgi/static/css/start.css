@@ -17,12 +17,14 @@ main{
   animation-direction: alternate;
   animation-timing-function: ease-in-out;
 }
+@-webkit-keyframes blink {
+  from {display: inline-block;}
+  to {display: none;}
+}
+
 @keyframes blink {
-    0% {opacity: 1;}
-    25% {opacity: 0.9;}
-    50% {opacity: 0.7;}
-    75% {opacity: 0.5;}
-    100% {opacity: 0.4;}
+  from {display: inline-block;}
+  to {display: none;}
 }
 .topic-wrapper, .start-wrapper, .option-wrapper{
   display: inline-block;
