@@ -19,7 +19,8 @@ def welcome(request):
 
 def start(request):
     title = 'Web mini game centre'
-    ext_js=ext_js=[]
-    static_js= ['js/start.js']
-    static_css = ['css/start.css']
+    ext_js=['code.jquery.com/jquery-1.12.4.min']
+    ext_css=[]
+    static_js= ['start']
+    static_css = ['start']
     return render_to_response('start.html',locals())
