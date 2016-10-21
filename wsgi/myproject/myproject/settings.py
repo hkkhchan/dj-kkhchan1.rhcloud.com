@@ -96,4 +96,4 @@ USE_TZ = True
 
 STATIC_URL = '/misc/'
 # STATIC_ROOT = os.path.join(WSGI_DIR, 'misc')
-STATIC_ROOT = os.path.join(DJ_PROJECT_DIR,'misc')
+STATIC_ROOT = os.path.join(WSGI_DIR,'myproject/myproject/misc')
