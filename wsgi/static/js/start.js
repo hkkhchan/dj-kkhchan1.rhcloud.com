@@ -12,7 +12,7 @@ $(document).ready(function(){
   });
   
   var option_nav=function (keyCode){
-    switch(e.keyCode){
+    switch(keyCode){
       case 38: //up arrow
         if ($('.play').hasClass('selected')){
           $('.play, .setting').toggleClass('selected');
