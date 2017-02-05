@@ -1,5 +1,5 @@
 var vn = new Vue({
-  el : 'main',
+  el : '#main',
   created: function(){
     window.addEventListener('keydown',this.key)
   },
