@@ -23,7 +23,7 @@ def start(request):
     title = 'Web mini game centre'
     ext_js = [
         'code.jquery.com/jquery-1.12.4.min',
-        'cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.js',
+        'cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue',
     ]
     ext_css = []
     static_js = ['start','main']
