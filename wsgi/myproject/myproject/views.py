@@ -26,8 +26,8 @@ def start(request):
         'cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue',
     ]
     ext_css = []
-    static_js = ['start','main']
-    static_css = ['start']
+    static_js = ['main']
+    static_css = ['main']
     return render_to_response('base.html',locals())
 
 @csrf_exempt
