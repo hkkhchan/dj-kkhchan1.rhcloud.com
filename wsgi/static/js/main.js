@@ -12,13 +12,13 @@ var menu = Vue.component('menu',{
       <div v-bind:class="ptr == 3?'selected':''">Signup</div>
       <div v-bind:class="ptr == 4?'selected':''">Setting</div>
     </div>
-  `;
+  `
 });
 
 var vm = new Vue({
   el : '#main',
   data : {
-    ptr = 0
+    ptr : 0
   },
   created: function(){
     window.addEventListener('keydown',this.key)
