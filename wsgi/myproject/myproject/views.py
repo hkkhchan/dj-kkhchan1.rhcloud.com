@@ -4,6 +4,7 @@ from django.http import HttpResponse
 from django.shortcuts import render_to_response
 import pdb
 import datetime
+import json
 
 def hello(request):
     return HttpResponse("Hello world ! It is my/my/views.py")
@@ -24,3 +25,6 @@ def start(request):
     static_js = ['start']
     static_css = ['start']
     return render_to_response('start.html',locals())
+
+def login(request):
+    return JsonResponse({'login_id':request.POST.get('login_id','new')})
