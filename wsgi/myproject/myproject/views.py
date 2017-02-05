@@ -1,11 +1,11 @@
 from django.views.decorators.csrf import csrf_exempt
 from django.template.loader import get_template
 from django.template import Template, Context
-from django.http import HttpResponse
+from django.http import HttpResponse,JsonResponse
 from django.shortcuts import render_to_response
 import pdb
 import datetime
-import json
+
 
 def hello(request):
     return HttpResponse("Hello world ! It is my/my/views.py")
