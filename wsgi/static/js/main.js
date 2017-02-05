@@ -1,5 +1,6 @@
 var menu = Vue.component('main-menu',{
   template : `
+  <div>
     <div class="topic-wrapper">
       <div class="topic">WEB MINI GAME CENTER</div>
     </div>
@@ -12,6 +13,7 @@ var menu = Vue.component('main-menu',{
       <div v-bind:class="ptr == 3?'selected':''">Signup</div>
       <div v-bind:class="ptr == 4?'selected':''">Setting</div>
     </div>
+  </div>
   `
 });
 
