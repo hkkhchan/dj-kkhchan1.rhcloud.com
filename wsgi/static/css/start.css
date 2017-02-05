@@ -41,7 +41,7 @@
   display: none;
   padding: 0 1%;
 }
-.option{
+.option-wrapper > div{
   font-size: 30px;
   margin: 10px 0;
 }
