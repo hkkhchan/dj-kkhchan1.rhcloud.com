@@ -35,10 +35,10 @@ var vm = new Vue({
       <div class="message">Press any key to start</div>
     </div>
     <div v-show="ptr > 0" class="option-wrapper">
-      <div v-bind:class="ptr == 1?'selected':''">Play</div>
-      <div v-bind:class="ptr == 2?'selected':''">Login</div>
-      <div v-bind:class="ptr == 3?'selected':''">Signup</div>
-      <div v-bind:class="ptr == 4?'selected':''">Setting</div>
+      <div :class="ptr == 1?'selected':''">Play</div>
+      <div :class="ptr == 2?'selected':''">Login</div>
+      <div :class="ptr == 3?'selected':''">Signup</div>
+      <div :class="ptr == 4?'selected':''">Setting</div>
     </div>
   </div>
   `,
@@ -48,9 +48,9 @@ var vm = new Vue({
   methods: {
     key : function (e){
       if (this.ptr > 0){
-        if (this.ptr > 1 && e.key == 'ArrowDown'){
+        if (this.ptr > 1 && e.key == 'ArrowUp'){
           this.ptr--;
-        } else if (this.ptr < 4 && e.key == 'ArrowUp'){
+        } else if (this.ptr < 4 && e.key == 'ArrowDown'){
           this.ptr++;
         } else if (e.key == 'Escape'){
           this.ptr = 0;

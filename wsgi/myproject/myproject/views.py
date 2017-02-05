@@ -28,7 +28,7 @@ def start(request):
     ext_css = []
     static_js = ['start','main']
     static_css = ['start']
-    return render_to_response('start.html',locals())
+    return render_to_response('base.html',locals())
 
 @csrf_exempt
 def login(request):
