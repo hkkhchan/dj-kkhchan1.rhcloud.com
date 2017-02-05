@@ -1,4 +1,4 @@
-var menu = Vue.component('menu',{
+var menu = Vue.component('main-menu',{
   template : `
     <div class="topic-wrapper">
       <div class="topic">WEB MINI GAME CENTER</div>
