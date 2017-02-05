@@ -11,10 +11,10 @@ var vm = new Vue({
       <div class="message">Press any key to start</div> \
     </div> \
     <div v-show="ptr > 0" class="option-wrapper"> \
-      <div :class="ptr == 1?'selected':''">Play</div> \
-      <div :class="ptr == 2?'selected':''">Login</div> \
-      <div :class="ptr == 3?'selected':''">Signup</div> \
-      <div :class="ptr == 4?'selected':''">Setting</div> \
+      <div :class="ptr == 1?\'selected\':\'\'">Play</div> \
+      <div :class="ptr == 2?\'selected\':\'\'">Login</div> \
+      <div :class="ptr == 3?\'selected\':\'\'">Signup</div> \
+      <div :class="ptr == 4?\'selected\':\'\'">Setting</div> \
     </div> \
   </div>',
   created: function(){
