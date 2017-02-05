@@ -11,15 +11,15 @@
     {% for css1 in static_css%}
       <link href="/static/css/{{ css1 }}.css" rel="stylesheet" type="text/css">
     {% endfor %}
-    {% for js in ext_js%}
-      <script src="//{{ js }}.js"></script>
-    {% endfor %}    
-    {% for js1 in static_js%}
-      <script src="/static/js/{{ js1 }}.js"></script>
-    {% endfor %}
   </head>
   <body>
     <div id="main">{% block content %}{% endblock %}</div>
     <footer>{% include "footer.html" %}</footer>
   </body>
+  {% for js in ext_js%}
+    <script src="//{{ js }}.js"></script>
+  {% endfor %}    
+  {% for js1 in static_js%}
+    <script src="/static/js/{{ js1 }}.js"></script>
+  {% endfor %}  
 </html>
