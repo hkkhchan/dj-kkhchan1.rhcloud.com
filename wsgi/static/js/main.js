@@ -31,10 +31,10 @@ var vm = new Vue({
     <div class="topic-wrapper">
       <div class="topic">WEB MINI GAME CENTER</div>
     </div>
-    <div v-if="ptr == 0" class="start-wrapper">
+    <div v-show="ptr == 0" class="start-wrapper">
       <div class="message">Press any key to start</div>
     </div>
-    <div v-if="ptr > 0" class="option-wrapper">
+    <div v-show="ptr > 0" class="option-wrapper">
       <div v-bind:class="ptr == 1?'selected':''">Play</div>
       <div v-bind:class="ptr == 2?'selected':''">Login</div>
       <div v-bind:class="ptr == 3?'selected':''">Signup</div>
