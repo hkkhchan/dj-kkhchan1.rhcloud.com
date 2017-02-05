@@ -3,22 +3,20 @@ var vm = new Vue({
   data : {
     ptr : 0
   },
-  template : `
-  <div id="main">
-    <div class="topic-wrapper">
-      <div class="topic">WEB MINI GAME CENTER</div>
-    </div>
-    <div v-show="ptr == 0" class="start-wrapper">
-      <div class="message">Press any key to start</div>
-    </div>
-    <div v-show="ptr > 0" class="option-wrapper">
-      <div :class="ptr == 1?'selected':''">Play</div>
-      <div :class="ptr == 2?'selected':''">Login</div>
-      <div :class="ptr == 3?'selected':''">Signup</div>
-      <div :class="ptr == 4?'selected':''">Setting</div>
-    </div>
-  </div>
-  `,
+  template : '<div id="main"> \
+    <div class="topic-wrapper"> \
+      <div class="topic">WEB MINI GAME CENTER</div> \
+    </div> \
+    <div v-show="ptr == 0" class="start-wrapper"> \
+      <div class="message">Press any key to start</div> \
+    </div> \
+    <div v-show="ptr > 0" class="option-wrapper"> \
+      <div :class="ptr == 1?'selected':''">Play</div> \
+      <div :class="ptr == 2?'selected':''">Login</div> \
+      <div :class="ptr == 3?'selected':''">Signup</div> \
+      <div :class="ptr == 4?'selected':''">Setting</div> \
+    </div> \
+  </div>',
   created: function(){
     window.addEventListener('keydown',this.key)
   },
