@@ -27,7 +27,7 @@ var vm = new Vue({
     ptr : 0
   },
   template : `
-  <div>
+  <div id="main">
     <div class="topic-wrapper">
       <div class="topic">WEB MINI GAME CENTER</div>
     </div>
@@ -47,18 +47,18 @@ var vm = new Vue({
   },
   methods: {
     key : function (e){
-      if (ptr > 0){
-        if (ptr > 1 && e.key == 'ArrowDown'){
-          ptr--;
-        } else if (ptr < 4 && e.key == 'ArrowUp'){
-          ptr++;
+      if (this.ptr > 0){
+        if (this.ptr > 1 && e.key == 'ArrowDown'){
+          this.ptr--;
+        } else if (this.ptr < 4 && e.key == 'ArrowUp'){
+          this.ptr++;
         } else if (e.key == 'Escape'){
-          ptr = 0;
+          this.ptr = 0;
         } else if (e.key == 'Enter'){
-          console.log('run ' + ptr);
+          console.log('run ' + this.ptr);
         }
       } else {
-        ptr = 1;
+        this.ptr = 1;
       }
     }
   }
