@@ -3,7 +3,7 @@ var vn = new Vue({
   created: function(){
     window.addEventListener('keydown',this.key)
   },
-  method: {
+  methods: {
     key : function (e){
       console.log(e);
     }
