@@ -21,9 +21,12 @@ def welcome(request):
 
 def start(request):
     title = 'Web mini game centre'
-    ext_js = ['code.jquery.com/jquery-1.12.4.min']
+    ext_js = [
+        'code.jquery.com/jquery-1.12.4.min',
+        'cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.js',
+    ]
     ext_css = []
-    static_js = ['start']
+    static_js = ['start','main']
     static_css = ['start']
     return render_to_response('start.html',locals())
 
