@@ -1,3 +1,4 @@
+from django.views.decorators.csrf import csrf_exempt
 from django.template.loader import get_template
 from django.template import Template, Context
 from django.http import HttpResponse
@@ -26,5 +27,6 @@ def start(request):
     static_css = ['start']
     return render_to_response('start.html',locals())
 
+@csrf_exempt
 def login(request):
     return JsonResponse({'login_id':request.POST.get('login_id','new')})
