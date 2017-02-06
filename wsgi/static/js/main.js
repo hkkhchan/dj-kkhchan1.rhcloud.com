@@ -1,6 +1,6 @@
 var before_data = {before_ptr : 0};
 var after_data = {after_ptr : 0};
-Vue.component("before_login",{
+var before_menu = Vue.component("before_login",{
   template : '<div> \
     <div class="topic-wrapper"> \
       <div class="topic">WEB MINI GAME CENTER</div> \
@@ -20,7 +20,7 @@ Vue.component("before_login",{
   }
 });
 
-Vue.component("after_login",{
+var after_menu = Vue.component("after_login",{
   template : '<div> \
     <div class="header"> \
       <div class="hello">{{ name }}</div>\
