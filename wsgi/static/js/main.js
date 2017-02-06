@@ -53,7 +53,7 @@ var vm = new Vue({
   },
   methods: {
     key : function (e){
-      switch(vm.currentView){
+      switch(this.currentView){
         case 'before_login':
           if (this.before_ptr > 0){
             if (this.before_ptr > 1 && e.key == 'ArrowUp'){
