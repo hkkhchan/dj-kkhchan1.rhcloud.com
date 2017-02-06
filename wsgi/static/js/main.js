@@ -50,7 +50,7 @@ var vm = new Vue({
     after_ptr : 0,
     currentView : "before_login"
   },
-  template : '<div v-component="{{currentView}}">',
+  template : '<div v-component="{{currentView}}"></div>',
   created: function(){
     window.addEventListener('keydown',this.key)
   },
