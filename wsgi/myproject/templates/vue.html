@@ -1,0 +1,25 @@
+{% load static %}
+<!doctype html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link href="//fonts.googleapis.com/css?family=Freckle+Face" rel="stylesheet" type="text/css">
+    <link href="/static/css/base.css" rel="stylesheet" type="text/css">
+    {% for css in ext_css%}
+      <link href="//{{ css }}.css" rel="stylesheet" type="text/css">
+    {% endfor %}    
+    {% for css1 in static_css%}
+      <link href="/static/css/{{ css1 }}.css" rel="stylesheet" type="text/css">
+    {% endfor %}
+  </head>
+  <body>
+    <div id="app"></div>
+    <footer>{% include "footer.html" %}</footer>
+  </body>
+  {% for js in ext_js%}
+    <script src="//{{ js }}.js"></script>
+  {% endfor %}    
+  {% for js1 in static_js%}
+    <script src="/static/js/{{ js1 }}.js"></script>
+  {% endfor %}  
+</html>

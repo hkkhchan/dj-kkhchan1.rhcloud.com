@@ -29,7 +29,3 @@ def start(request):
     static_js = ['main']
     static_css = ['main']
     return render_to_response('base.html',locals())
-
-@csrf_exempt
-def login(request):
-    return JsonResponse({'login_id':request.POST.get('login_id','new')})
