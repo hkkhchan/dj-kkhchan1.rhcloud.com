@@ -16,7 +16,7 @@ Vue.component("before_login",{
     </div> \
   </div>',
   data : function(){
-    return before_data
+    return before_data;
   }
 });
 
@@ -39,7 +39,7 @@ Vue.component("after_login",{
     </div> \
   </div>',
   data: function (){
-    return after_data
+    return after_data;
   }
 });
 
@@ -85,9 +85,6 @@ var vm = new Vue({
           }
           break;
       }
-    },
-    login: function(login_id,password){
-             
-           }
+    }
   }
 });
