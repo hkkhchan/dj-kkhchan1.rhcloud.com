@@ -16,9 +16,11 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from myproject import views
+from player.views import login
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^hello/', views.hello, name='hello'),
     url(r'^$', views.start, name='start'),
-    url(r'^login/',views.login, name='login'),
+    # url(r'^login/', views.login, name='login'),
+    url(r'^login/', login),
 ]
