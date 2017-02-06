@@ -15,6 +15,9 @@ Vue.component("before_login",{
       <div :class="before_ptr == 4?\'selected\':\'\'">Setting</div> \
     </div> \
   </div>',
+  props : {
+    before_ptr: String
+  }
   data : function(){
     return before_data;
   }
