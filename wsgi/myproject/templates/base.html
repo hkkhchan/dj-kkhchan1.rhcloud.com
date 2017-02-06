@@ -13,7 +13,9 @@
     {% endfor %}
   </head>
   <body>
-    <div id="main"></div>
+    <div id="main">
+      <div v-component="{{currentView}}"></div>
+    </div>
     <footer>{% include "footer.html" %}</footer>
   </body>
   {% for js in ext_js%}
