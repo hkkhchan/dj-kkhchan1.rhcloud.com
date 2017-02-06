@@ -17,7 +17,7 @@ Vue.component("before_login",{
   </div>',
   props : {
     before_ptr: String
-  }
+  },
   data : function(){
     return before_data;
   }
