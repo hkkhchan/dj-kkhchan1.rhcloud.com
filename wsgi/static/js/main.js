@@ -1,7 +1,7 @@
 var before_data = {before_ptr : 0};
 var after_data = {after_ptr : 0};
 Vue.component("before_login",{
-  template : '<div id="main"> \
+  template : '<div> \
     <div class="topic-wrapper"> \
       <div class="topic">WEB MINI GAME CENTER</div> \
     </div> \
@@ -21,7 +21,7 @@ Vue.component("before_login",{
 });
 
 Vue.component("after_login",{
-  template : '<div id="main"> \
+  template : '<div> \
     <div class="header"> \
       <div class="hello">{{ name }}</div>\
       <div class="current_time">{{ current_time }}</div>\
@@ -46,8 +46,6 @@ Vue.component("after_login",{
 var vm = new Vue({
   el : '#main',
   data : {
-    before_ptr : 0,
-    after_ptr : 0,
     currentView : "before_login"
   },
   created: function(){
