@@ -88,7 +88,7 @@ var vm = new Vue({
           }
           break;
       }
-    }
+    },
     login: function(login_id,password){
              
            }
